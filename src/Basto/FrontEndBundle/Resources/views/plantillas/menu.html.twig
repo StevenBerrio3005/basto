@@ -1,0 +1,26 @@
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{ path('basto_front_end_homepage') }}">Basto V1</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="{{ path('basto_front_end_homepage') }}">Inicio</a> </li>
+                <li><a href="{{ path('basto_front_end_consultas_copias') }}">Copias</a></li>                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consultas <b class="caret"></b></a>
+                    <ul class="dropdown-menu">                        
+                        <li><a href="{{ path('basto_front_end_consultas_registro_copias') }}">Registro copias</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Otras</li>
+                        <li><a href="#">Historico</a></li>                        
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="{{ path('logout') }}">{{ Usuario }}</a></li>
+              <li><a href="{{ path('logout') }}">Salir</a></li>              
+            </ul>            
+        </div>
+    </div>
+</div>
